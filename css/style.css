@@ -1,0 +1,209 @@
+/* Defaults */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purple: #430E87;
+    --pink: #FB35FF;
+    --magenta: #B235FF;
+    --violet: #6A35FF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+#title,
+nav,
+.counter,
+.tiles-box,
+.row{
+    display: flex;
+}
+
+h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    line-height: 150%;
+}
+
+p{
+    line-height: 200%;
+}
+
+/* Hover */
+
+.theme-switcher:hover,
+.profiles img:hover,
+#team .row button:hover{
+    filter: brightness(1);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Page Padding */
+
+#title,
+#team,
+#funny-moments{
+    padding: 6rem;
+}
+
+/* Triangle */
+
+.triangle{
+    height: 100vh;
+    width: 100vw;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    background: var(--purple);
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Title Sec */
+
+#title{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.theme-switcher{
+    padding: 1rem;
+    background: #000;
+    border-radius: 4rem;
+}
+
+.profiles{
+    position: absolute;
+    left: 40%;
+    background: #000;
+    padding: 1rem;
+}
+
+.profiles img,
+.theme-switcher img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.profiles img{
+    border: 2px solid var(--purple);
+}
+
+.profiles,
+.profiles img{
+    border-radius: 100rem;
+}
+
+nav{
+    width: 100%;
+}
+
+/* Counters' Tiles */
+
+.counter{
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.counter img{
+    transform: scaleX(-1);
+    width: 50%;
+    height: auto;
+}
+
+.counter h1{
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    line-height: 160%;
+    text-transform: uppercase;
+}
+
+.tile{
+    background: rgba(255, 255, 255, 0.37);
+    margin: 8rem 4rem 0 0;
+    padding: 2rem;
+    text-align: center;
+}
+
+.tile .number{
+    font-size: 4rem;
+}
+
+.tile .text{
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+.tile:nth-child(1){
+    border-bottom: .3rem solid var(--pink);
+}
+
+.tile:nth-child(2){
+    border-bottom: .3rem solid var(--magenta);
+}
+
+.tile:nth-child(3){
+    border-bottom: .3rem solid var(--violet);
+}
+
+/* Team Sec */
+
+#team{
+    background: var(--purple);
+    text-align: center;
+    line-height: 200%;
+}
+
+#team img{
+    width: 8em;
+    height: 8em;
+    border-radius: 50em;
+}
+
+#team .row:first-child{
+    margin-bottom: 4em;
+}
+
+#team button{
+    outline: 0;
+    border: 0;
+    font-size: 1rem;
+    background: transparent;
+    color: var(--pink);
+    text-transform: uppercase;
+}
+
+#team .row > *{
+    padding: 0 2rem;
+}
+
+/* FUNNY MOMENTS */
+
+#funny-moments{
+    background: rgba(0,0,0,1);
+}
+
+/* FOOTER */
+
+.footer-links,
+.copyrights{
+    padding: .5rem 0;
+    text-align: center;
+}
+
+.footer-links{
+    background: var(--purple);
+}
+
+.copyrights{
+    background: #250069;
+}
