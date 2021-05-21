@@ -8,6 +8,7 @@
 
     <!-- CSS Core -->
     <link rel="stylesheet" href="css/background.css" />
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- JS Core -->
@@ -15,12 +16,17 @@
   </head>
   <body>
     <div id="wrapper">
+
+      <!-- BACKGROUND -->
       <div id="background">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
       </div>
+
       <div class="triangle"></div>
+      
+      <!-- FIRST VIEW -->
       <section id="title">
         <nav>
           <div class="theme-switcher">
@@ -59,6 +65,8 @@
           <img src="svg/vr.svg" />
         </div>
       </section>
+
+      <!-- TEAM SEC -->
       <section id="team">
         <div class="row">
           <div>
@@ -125,7 +133,37 @@
           </div>
         </div>
       </section>
-      <section id="funny-moments"></section>
+
+      <!-- FUNNY MOMENTS SEC -->
+      <section id="funny-moments">
+        <h1>funny moments</h1>
+        <div class="carousel">
+          <div class="carousel-movie visible-slide">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZWBBVbJ6cMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-movie">
+            <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/rjpIpzuVVVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-movie">
+            <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/wEqO4vpL8tI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-movie">
+            <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/RH0h-vAWhFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-movie">
+            <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/dvp5beA7BJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-movie">
+            <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/dfYYEy9w24c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="carosuel-actions">
+          <button id="prev" aria-label="Prev">&lt;</button>
+          <button id="next" aria-label="Next">&gt;</button>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
       <footer>
         <p class="footer-links">&gt;&gt;Linki do social mediów&lt;&lt;</p>
         <p class="copyrights">
@@ -134,5 +172,7 @@
         </p>
       </footer>
     </div>
+
+    <script src="js/carousel.js"></script>
   </body>
 </html>

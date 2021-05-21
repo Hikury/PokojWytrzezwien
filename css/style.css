@@ -16,12 +16,23 @@
     color: #fff;
 }
 
+::-webkit-scrollbar{
+    scroll-behavior: smooth;
+}
+
 #title,
 nav,
 .counter,
 .tiles-box,
 .row{
     display: flex;
+}
+
+h1{
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    line-height: 160%;
+    text-transform: uppercase;
 }
 
 h3{
@@ -35,13 +46,22 @@ p{
     line-height: 200%;
 }
 
+#team,
+footer{
+    position: relative;
+}
+
 /* Hover */
+
+.theme-switcher img:hover,
+.profiles img:hover{
+    filter: brightness(.9);
+    transform: scale(1.2);
+}
 
 .theme-switcher:hover,
 .profiles img:hover,
-#team .row button:hover{
-    filter: brightness(1);
-    transform: scale(1.2);
+button{
     cursor: pointer;
 }
 
@@ -118,13 +138,6 @@ nav{
     transform: scaleX(-1);
     width: 50%;
     height: auto;
-}
-
-.counter h1{
-    font-size: 4rem;
-    letter-spacing: .5rem;
-    line-height: 160%;
-    text-transform: uppercase;
 }
 
 .tile{
