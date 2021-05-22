@@ -1,45 +1,62 @@
-.carousel{
-    overflow: hidden;
-    min-width: 600px;
-    position: relative;
+/* SLIDER */
+
+#slider, ul
+{
+  height: 24em;
 }
 
-.carousel .carousel_item img{
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+#slider
+{
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
 }
 
-/* To implement in js */
-.visible-slide{
-    display: block;
+#slider li
+{
+  position: relative;
+  width: 600px;
+  display: inline-block;
 }
 
-.hidden-slide{
-    display: none;
+#slider ul
+{
+  list-style: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 9000px;
+  transition: left .3s linear;
+  -moz-transition: left .3s linear;
+  -o-transition: left .3s linear;
+  -webkit-transition: left .3s linear;
+  margin: 32px 0 0 -32px;
 }
 
-.carousel .carousel-actions{
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
+/* CONTENT */
+.slider-container
+{
+  margin: 0 auto;
+  padding: 0;
+  width: 550px;
+  min-height: 180px;
 }
 
-.carousel .carousel-actions button{
-    border-radius: 50rem;
-    border: 0;
-    font-weight: bold;
-    width: 20rem;
-    height: 20rem;
+/* ANIMATION */
+
+@-webkit-keyframes slide-animation {
+  20% {left:0px;}
+  25% {left:-600px;}
+  45% {left:-600px;}
+  50% {left:-1200px;}
+  70% {left:-1200px;}
+  75% {left:-1800px;}
+  98% {left:-1800px;} 
+  100% {left:0px;}
 }
 
-.carousel .carousel-actions button#prev{
-    margin-left: 20px;
-}
-
-.carousel .carousel-actions button#next{
-    margin-right: 20px;
+#slider ul
+{
+  -webkit-animation: slide-animation 30s infinite;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Pokój Wytrzeźwień</title>
 
     <!-- CSS Core -->
@@ -15,6 +16,24 @@
     <link rel="stylesheet" href="js/main.js" />
   </head>
   <body>
+    <div class="preloader">
+      <img src="svg/preloader.svg">
+      <div>
+        <span class="loading-text">ł</span>
+        <span class="loading-text">a</span>
+        <span class="loading-text">d</span>
+        <span class="loading-text">o</span>
+        <span class="loading-text">w</span>
+        <span class="loading-text">a</span>
+        <span class="loading-text">n</span>
+        <span class="loading-text">i</span>
+        <span class="loading-text">e</span>
+        <span class="loading-text">.</span>
+        <span class="loading-text">.</span>
+        <span class="loading-text">.</span>
+      </div>
+    </div>
+
     <div id="wrapper">
 
       <!-- BACKGROUND -->
@@ -137,30 +156,42 @@
       <!-- FUNNY MOMENTS SEC -->
       <section id="funny-moments">
         <h1>funny moments</h1>
-        <div class="carousel">
-          <div class="carousel-movie visible-slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZWBBVbJ6cMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <div id="slider">
+          <ul>
+            <li>
+            <div class="slider-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ZWBBVbJ6cMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </li>
+              <li>
+              <div class="slider-container">
+                <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/rjpIpzuVVVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </li>
+              <li>
+              <div class="slider-container">
+                <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/wEqO4vpL8tI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </li>
+              <li>
+              <div class="slider-container">
+                <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/RH0h-vAWhFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </li>
+            <li>
+              <div class="slider-container">
+                <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/dvp5beA7BJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </li>
+            <li>
+              <div class="slider-container">
+                <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/dfYYEy9w24c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </li>
+          </ul>
           </div>
-          <div class="carousel-movie">
-            <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/rjpIpzuVVVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="carousel-movie">
-            <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/wEqO4vpL8tI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="carousel-movie">
-            <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/RH0h-vAWhFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="carousel-movie">
-            <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/dvp5beA7BJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="carousel-movie">
-            <iframe class="hidden-slide" width="560" height="315" src="https://www.youtube.com/embed/dfYYEy9w24c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="carosuel-actions">
-          <button id="prev" aria-label="Prev">&lt;</button>
-          <button id="next" aria-label="Next">&gt;</button>
-        </div>
+
       </section>
 
       <!-- FOOTER -->
@@ -173,6 +204,6 @@
       </footer>
     </div>
 
-    <script src="js/carousel.js"></script>
+    <script src="js/preloader.js"></script>
   </body>
 </html>
