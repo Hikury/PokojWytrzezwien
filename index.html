@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- JS Core -->
-    <link rel="stylesheet" href="js/main.js" />
   </head>
   <body>
     <div class="preloader">
@@ -48,9 +46,14 @@
       <!-- FIRST VIEW -->
       <section id="title">
         <nav>
-          <div class="theme-switcher">
-            <img src="svg/dark_mode_black_24dp.svg" alt="Przełącz motyw" />
-          </div>
+          <label class="theme-switcher" for="themeswitch">
+            <div class="background"></div>
+            <input type="checkbox" id="themeswitch">
+            <div class="switch">
+                <img class="sun" src="svg/default.svg">
+                <!-- <img class="moon" src="svg/blue.svg"> -->
+            </div>
+        </label>
           <div class="profiles">
             <a href="#team"><img src="img/dawid.jpg" alt="Dawid" /></a>
             <a href="#team"><img src="img/bjushee.jpg" alt="Bjushee" /></a>
@@ -196,7 +199,38 @@
 
       <!-- FOOTER -->
       <footer>
-        <p class="footer-links">&gt;&gt;Linki do social mediów&lt;&lt;</p>
+        <div class="footer-links">
+          <p class="footer-social">&gt;&gt;Linki do social mediów&lt;&lt;</p>
+          <div class="social-media">
+            <ul>
+              <h2>Twitch</h2>
+              <li>Dawid</li>
+              <li>Bjushee</li>
+              <li>Marson</li>
+              <li>Bugi</li>
+              <li>Morkie</li>
+              <li>Oskar</li>
+            </ul>
+            <ul>
+              <h2>Youtube</h2>
+              <li>Dawid</li>
+              <li>Bjushee</li>
+              <li>Marson</li>
+              <li>Bugi</li>
+              <li>Morkie</li>
+              <li>Oskar</li>
+            </ul>
+            <ul>
+              <h2>Instagram</h2>
+              <li>Dawid</li>
+              <li>Bjushee</li>
+              <li>Marson</li>
+              <li>Bugi</li>
+              <li>Morkie</li>
+              <li>Oskar</li>
+            </ul>
+          </div>
+        </div>
         <p class="copyrights">
           Copyrights 2021 &copy; Aleksandra Mazan | Łukasz Kowalczyk | Bartosz
           Tondera
@@ -204,6 +238,8 @@
       </footer>
     </div>
 
-    <script src="js/preloader.js"></script>
+    <!-- JS Core -->
+    <script src="./js/main.js"></script>
+
   </body>
 </html>
