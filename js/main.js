@@ -46,18 +46,15 @@ const socialLinks = document.querySelector('.footer-social').addEventListener("c
 
 // READ MORE TEXT
 
-function readMore(btn){
-    
-const moreText = document.getElementsByClassName("more-text");
-const dots = document.getElementsByClassName("dots");
+// READ MORE TEXT
+const readMoreBtn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".tekst");
 
-moreText.classList.toggle('dnone');
-dots.classList.toggle('dnone');
-
-if(btn.innerHTML === 'czytaj więcej'){
-  btn.innerHTML = 'czytaj mniej';
-}else{
-  btn.innerHTML = 'czytaj więcej';
-}
-
-}
+readMoreBtn.addEventListener("click",(e)=>{
+    text.classList.toggle("show-more");
+    if(readMoreBtn.innerText === 'czytaj więcej'){
+    readMoreBtn.innerText ='czytaj mniej';
+    }else{
+    readMoreBtn.innerText = 'czytaj więcej';
+    }
+});

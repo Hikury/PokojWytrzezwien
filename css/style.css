@@ -22,14 +22,14 @@
 }
 
 [data-theme="dark"] {
-    --primary: hsl(246, 89%, 39%);
-    --secondary: hsl(246, 100%, 68%);
-    --accent-dark: hsl(246, 81%, 29%);
-    --accent-light: hsl(246, 100%, 60%);
+    --primary: hsl(192, 90%, 34%);
+    --secondary: hsl(182, 94%, 30%);
+    --accent-dark: hsl(207, 100%, 50%);
+    --accent-light: hsl(209, 84%, 29%);
 
-    --tile1: hsl(214, 100%, 60%);
-    --tile2: hsl(221, 100%, 60%);
-    --tile3: hsl(246, 100%, 60%);
+    --tile3: hsl(224, 87%, 38%);
+    --tile1: hsl(194, 89%, 48%);
+    --tile2: hsl(212, 81%, 39%);
 }
 
 ::-webkit-scrollbar{
@@ -273,13 +273,18 @@ nav{
 
 /* Read more button */
 
-.text.show-more .more-text {
-    display: inline;
+.tekst {
+    font-size: 20px;
 }
 
-.text.show-more .dots {
+.więcejTekstu {
     display: none;
 }
+
+.tekst .show-more .więcejTekstu {
+    display: inline;
+}    
+
 
 /* FUNNY MOMENTS */
 
@@ -320,6 +325,17 @@ nav{
 .social-media-visible{
     display: flex;
     justify-content: space-between;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: crimson;
+    letter-spacing: 1.5px;
+    transition: .6s;
 }
 
 .copyrights{
