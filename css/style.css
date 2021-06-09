@@ -168,6 +168,10 @@ button{
     border-radius: 4rem;
 }
 
+#themeswitch{
+    display: none;
+}
+
 .profiles{
     position: absolute;
     left: 40%;
@@ -264,6 +268,17 @@ nav{
 
 #team .row > *{
     padding: 0 2rem;
+    min-width: 33%;
+}
+
+/* Read more button */
+
+.text.show-more .more-text {
+    display: inline;
+}
+
+.text.show-more .dots {
+    display: none;
 }
 
 /* FUNNY MOMENTS */
@@ -284,18 +299,13 @@ nav{
     background: var(--primary);
 }
 
-.social-media{
-    display: flex;
-    justify-content: space-between;
-}
-
 .social-media ul{
     padding: 0 16rem;
 }
 
 .social-media ul li{
-list-style: none;
-margin: 1rem 0;
+    list-style: none;
+    margin: 1rem 0;
 }
 
 .footer-social:hover{
@@ -308,58 +318,10 @@ margin: 1rem 0;
 }
 
 .social-media-visible{
-    display: block;
-    transition: 1s;
-}
-
-.copyrights{
-    background: var(--accent-dark);
-}
-
-/* MEDIAS */
-
-@media screen and (max-width: 786px) {
-
-/* Page Padding */
-
-#title,
-#team,
-#funny-moments{
-    padding: 4rem;
-}
-
-/* Title Sec */
-
-#title,
-.counter,
-.counter > *{
-    width: 100%;
-}
-
-#title .counter img,
-#title .profiles{
-    display: none;
-}
-
-/* Counters' Tiles */
-
-.tiles-box{
     display: flex;
     justify-content: space-between;
 }
 
-.tile{
-    margin: 4rem 0 0 0;
-}
-
-/* Team Sec */
-
-#team .row > *{
-    margin: 2rem 0;
-}
-
-#team .row{
-    flex-direction: column;
-}
-
+.copyrights{
+    background: var(--accent-dark);
 }

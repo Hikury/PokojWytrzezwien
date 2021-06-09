@@ -40,4 +40,24 @@ window.addEventListener('load', () => {
 const socialLinks = document.querySelector('.footer-social').addEventListener("click", function(){
     const socialMediaDiv = document.querySelector(".social-media");
     socialMediaDiv.classList.toggle("social-media-visible");
-})
+});
+
+// TIMER
+
+// READ MORE TEXT
+
+function readMore(btn){
+    
+const moreText = document.getElementsByClassName("more-text");
+const dots = document.getElementsByClassName("dots");
+
+moreText.classList.toggle('dnone');
+dots.classList.toggle('dnone');
+
+if(btn.innerHTML === 'czytaj więcej'){
+  btn.innerHTML = 'czytaj mniej';
+}else{
+  btn.innerHTML = 'czytaj więcej';
+}
+
+}
